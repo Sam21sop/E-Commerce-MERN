@@ -1,0 +1,37 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "E-commerce web application using MERN stack technology",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam21sop/E-Commerce-MERN.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "online",
+    "shopping"
+  ],
+  "author": "sopan bhere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sam21sop/E-Commerce-MERN/issues"
+  },
+  "homepage": "https://github.com/Sam21sop/E-Commerce-MERN#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
