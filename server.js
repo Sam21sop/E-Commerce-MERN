@@ -1,6 +1,6 @@
 import configEnvVar from "./backend/utility/configEnvVariables.js";
 import app from "./backend/index.js";
-import mongoDB from "./backend/databaseConfig/mongoDB.js";
+import mongoDB from "./backend/config/mongoDB.js";
 
 const PORT = configEnvVar.PORT || 3030 
 

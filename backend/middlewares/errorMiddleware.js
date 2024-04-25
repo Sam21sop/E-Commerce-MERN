@@ -1,8 +1,11 @@
+import configEnvVar from "../utility/configEnvVariables.js";
+
 const notFound = (req, res, next) => {
     const error = new Error(`Not found - ${req.originalUrl}`);
     res.status(404);
     next(error);
 };
+
 
 const errorHandler = (err, req, res, next) => {
 
@@ -16,7 +19,8 @@ const errorHandler = (err, req, res, next) => {
 
     res.status(statusCode).json({
         message,
-        stack: err.stack,
+        // stack: err.stack,
+        stack: configEnvVar.NODE_ENV === 'production' ? null : err.stack
     });
 };
 
